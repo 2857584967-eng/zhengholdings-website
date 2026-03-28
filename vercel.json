@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "zhengholdings-website",
+  "builds": [
+    {
+      "src": "**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

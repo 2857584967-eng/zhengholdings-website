@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 广东正和控股有限公司</title>
+    <meta name="description" content="联系广东正和控股，获取酒店投资、工抵房交易、资产管理等业务咨询。电话：188-1915-3204，邮箱：929832171@qq.com">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "联系我们 - 广东正和控股有限公司",
+        "description": "正和控股联系方式：电话、邮箱、地址",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+86-18819153204",
+            "email": "929832171@qq.com",
+            "contactType": "customer service",
+            "areaServed": "CN",
+            "availableLanguage": "Chinese"
+        }
+    }
+    </script>
+    
+    <!-- 样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-main">正和控股</span>
+                        <span class="logo-sub">ZHENGHE HOLDINGS</span>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="business.html">业务板块</a></li>
+                <li><a href="projects.html">项目展示</a></li>
+                <li><a href="investment.html">投资优势</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+                <li class="nav-cta"><a href="#consult" class="btn btn-primary">立即咨询</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">联系我们</h1>
+            <p class="page-subtitle">专业咨询 · 高效沟通 · 合作共赢</p>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>电话咨询</h3>
+                    <div class="contact-content">
+                        <p class="contact-detail">188-1915-3204</p>
+                        <p class="contact-time">周一至周五 9:00-18:00</p>
+                        <a href="tel:+8618819153204" class="btn btn-outline">
+                            <i class="fas fa-phone-alt"></i> 立即拨打
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>邮箱联系</h3>
+                    <div class="contact-content">
+                        <p class="contact-detail">929832171@qq.com</p>
+                        <p class="contact-time">24小时内回复</p>
+                        <a href="mailto:929832171@qq.com" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> 发送邮件
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>公司地址</h3>
+                    <div class="contact-content">
+                        <p class="contact-detail">广州市足球公园</p>
+                        <p class="contact-time">广东省广州市</p>
+                        <a href="https://maps.google.com/?q=广州市足球公园" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-map"></i> 查看地图
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>在线咨询</h3>
+                    <div class="contact-content">
+                        <p class="contact-detail">微信/视频号</p>
+                        <p class="contact-time">扫码添加好友</p>
+                        <button class="btn btn-outline" onclick="showWechatQR()">
+                            <i class="fab fa-weixin"></i> 添加微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询表单 -->
+    <section class="section bg-light" id="consult">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">业务咨询</h2>
+                <p class="section-subtitle">填写表单，我们将尽快与您联系</p>
+            </div>
+            
+            <div class="consult-form-container">
+                <form id="consultForm" class="consult-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">电话 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="请输入您的手机号码">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="请输入您的邮箱（选填）">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">咨询业务 *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">请选择咨询业务</option>
+                            <option value="工抵房投资">工抵房投资</option>
+                            <option value="酒店运营合作">酒店运营合作</option>
+                            <option value="资产管理咨询">资产管理咨询</option>
+                            <option value="项目实地考察">项目实地考察</option>
+                            <option value="其他合作">其他合作</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">咨询内容 *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="请简要描述您的需求..."></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> 提交咨询
+                        </button>
+                        <p class="form-note">提交后，我们的专业顾问将在24小时内联系您</p>
+                    </div>
+                </form>
+                
+                <div class="form-sidebar">
+                    <h3>常见问题</h3>
+                    <div class="faq-item">
+                        <h4>投资门槛是多少？</h4>
+                        <p>工抵房投资门槛较低，十几万起投，具体根据项目而定。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>租金回报如何支付？</h4>
+                        <p>按月支付，直接打入您指定的银行账户，合同明确约定。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>可以实地考察吗？</h4>
+                        <p>可以，我们提供免费的项目实地考察服务，提前预约即可。</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4>合同期限多长？</h4>
+                        <p>通常为3-5年，期满后可选择续约或退出，灵活选择。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作流程 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">合作流程</h2>
+                <p class="section-subtitle">从咨询到合作，全程专业服务</p>
+            </div>
+            
+            <div class="cooperation-steps">
+                <div class="cooperation-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>初步咨询</h3>
+                        <p>电话/在线咨询，了解基本需求</p>
+                    </div>
+                </div>
+                
+                <div class="cooperation-step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>需求分析</h3>
+                        <p>专业顾问分析，制定初步方案</p>
+                    </div>
+                </div>
+                
+                <div class="cooperation-step">
+                    <div class="step-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>实地考察</h3>
+                        <p>参观项目，深入了解细节</p>
+                    </div>
+                </div>
+                
+                <div class="cooperation-step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>签订合同</h3>
+                        <p>明确条款，保障双方权益</p>
+                    </div>
+                </div>
+                
+                <div class="cooperation-step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>合作启动</h3>
+                        <p>专业团队执行，全程服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-main">正和控股</span>
+                        <span class="logo-sub">ZHENGHE HOLDINGS</span>
+                    </div>
+                    <p class="footer-desc">专注酒店投资运营与资产管理，为投资者创造稳定价值回报。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="business.html">业务板块</a></li>
+                        <li><a href="investment.html">投资优势</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">联系我们</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 188-1915-3204</li>
+                        <li><i class="fas fa-envelope"></i> 929832171@qq.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 广州市足球公园</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">关注我们</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-douyin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-video"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 广东正和控股有限公司 版权所有</p>
+                <p>粤ICP备2024XXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 微信二维码弹窗 -->
+    <div id="wechatModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeWechatQR()">&times;</span>
+            <h3>添加微信咨询</h3>
+            <div class="qr-code">
+                <!-- 这里可以放置微信二维码图片 -->
+                <div class="qr-placeholder">
+                    <i class="fab fa-weixin"></i>
+                    <p>微信二维码</p>
+                </div>
+            </div>
+            <p class="modal-text">扫码添加微信，获取一对一专业咨询</p>
+            <p class="modal-note">或直接搜索微信号：Zhenghe-Holdings</p>
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="js/main.js"></script>
+    <script>
+        // 导航菜单切换
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('show');
+        });
+        
+        // 表单提交
+        document.getElementById('consultForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('感谢您的咨询！我们将在24小时内联系您。');
+            this.reset();
+        });
+        
+        // 微信二维码弹窗
+        function showWechatQR() {
+            document.getElementById('wechatModal').style.display = 'block';
+        }
+        
+        function closeWechatQR() {
+            document.getElementById('wechatModal').style.display = 'none';
+        }
+        
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            var modal = document.getElementById('wechatModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

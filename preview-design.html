@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计预览 - 正和控股官网</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #003366;
+            text-align: center;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .design-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .design-title {
+            color: #003366;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .design-title i {
+            color: #D4AF37;
+        }
+        
+        .preview-box {
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-preview {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo-image {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #003366 0%, #D4AF37 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-main {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #003366;
+        }
+        
+        .logo-sub {
+            font-size: 0.8rem;
+            color: #6c757d;
+            letter-spacing: 1px;
+        }
+        
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .color-item {
+            text-align: center;
+        }
+        
+        .color-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .color-primary {
+            background: #003366;
+        }
+        
+        .color-secondary {
+            background: #D4AF37;
+        }
+        
+        .color-accent {
+            background: #2E8B57;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #003366;
+            color: white;
+            border: 2px solid #003366;
+        }
+        
+        .btn-primary:hover {
+            background: white;
+            color: #003366;
+        }
+        
+        .btn-secondary {
+            background: #D4AF37;
+            color: #333;
+            border: 2px solid #D4AF37;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+        }
+        
+        .btn-outline {
+            background: white;
+            color: #003366;
+            border: 2px solid #003366;
+        }
+        
+        .btn-outline:hover {
+            background: #003366;
+            color: white;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        
+        .status-ready {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .instructions {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .instruction-step {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .instruction-step:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>正和控股官网设计预览</h1>
+        
+        <div class="design-section">
+            <h2 class="design-title"><i class="fas fa-palette"></i> 品牌色彩系统</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-box color-primary"></div>
+                    <div><strong>主色</strong></div>
+                    <div>#003366</div>
+                    <div>深蓝 - 专业、信任</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box color-secondary"></div>
+                    <div><strong>辅色</strong></div>
+                    <div>#D4AF37</div>
+                    <div>金色 - 财富、品质</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box color-accent"></div>
+                    <div><strong>强调色</strong></div>
+                    <div>#2E8B57</div>
+                    <div>海绿 - 成长、稳定</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="design-section">
+            <h2 class="design-title"><i class="fas fa-signature"></i> Logo设计 <span class="status-badge status-pending">待替换</span></h2>
+            <p>当前使用占位Logo，你可以替换为实际的公司Logo。</p>
+            
+            <div class="preview-box">
+                <div class="logo-preview">
+                    <div class="logo-image">ZH</div>
+                    <div class="logo-text">
+                        <div class="logo-main">正和控股</div>
+                        <div class="logo-sub">ZHENGHE HOLDINGS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>如何替换Logo：</h3>
+                <div class="instruction-step">准备Logo文件（PNG或SVG格式）</div>
+                <div class="instruction-step">保存到：<code>zhengholdings-website/images/logo.svg</code></div>
+                <div class="instruction-step">系统会自动加载新Logo</div>
+                <div class="instruction-step">查看 <code>LOGO_BACKGROUND_GUIDE.md</code> 获取详细说明</div>
+            </div>
+        </div>
+        
+        <div class="design-section">
+            <h2 class="design-title"><i class="fas fa-image"></i> 首页背景 <span class="status-badge status-pending">待添加</span></h2>
+            <p>首页英雄区域背景图片，建议使用酒店、建筑或商业相关的高质量图片。</p>
+            
+            <div class="preview-box" style="background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.6)), #f0f2f5; color: white; min-height: 300px;">
+                <div style="text-align: center;">
+                    <h2 style="color: white;">广东正和控股｜专注存量不动产与酒店资产运营</h2>
+                    <p>我们只做一件事：盘活存量资产，做稳健、可持续的运营收益</p>
+                    <div style="margin-top: 20px;">
+                        <button class="btn btn-secondary" style="margin: 5px;">了解投资优势</button>
+                        <button class="btn btn-outline" style="color: white; border-color: white; margin: 5px;">立即咨询合作</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>如何添加背景图片：</h3>
+                <div class="instruction-step">选择高质量背景图片（1920x1080）</div>
+                <div class="instruction-step">保存为：<code>zhengholdings-website/images/hero-bg.jpg</code></div>
+                <div class="instruction-step">系统会自动应用为首页背景</div>
+                <div class="instruction-step">推荐使用公司项目照片或专业商业图片</div>
+            </div>
+        </div>
+        
+        <div class="design-section">
+            <h2 class="design-title"><i class="fas fa-mouse-pointer"></i> 按钮样式</h2>
+            <p>网站使用的按钮样式，确保一致的用户体验。</p>
+            
+            <div class="preview-box">
+                <div class="btn-group">
+                    <button class="btn btn-primary">主要按钮</button>
+                    <button class="btn btn-secondary">次要按钮</button>
+                    <button class="btn btn-outline">轮廓按钮</button>
+                    <button class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">大号按钮</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="design-section">
+            <h2 class="design-title"><i class="fas fa-check-circle"></i> 当前完成状态</h2>
+            <ul>
+                <li>✅ 网站整体框架完成</li>
+                <li>✅ 首页设计完成</li>
+                <li>✅ 业务板块页面完成（包含你提供的内容）</li>
+                <li>✅ 响应式设计完成</li>
+                <li>✅ Logo框架完成（待替换实际Logo）</li>
+                <li>✅ 背景图片框架完成（待添加实际图片）</li>
+                <li>✅ 豆包AI测试页面完成</li>
+                <li>✅ 结构化数据标记完成</li>
+            </ul>
+        </div>
+        
+        <div class="btn-group" style="justify-content: center;">
+            <a href="index.html" class="btn btn-primary" target="_blank">
+                <i class="fas fa-eye"></i> 查看实际网站
+            </a>
+            <a href="business.html" class="btn btn-secondary" target="_blank">
+                <i class="fas fa-briefcase"></i> 查看业务板块
+            </a>
+            <a href="test-doubao.html" class="btn btn-outline" target="_blank">
+                <i class="fas fa-robot"></i> 测试豆包AI
+            </a>
+            <a href="LOGO_BACKGROUND_GUIDE.md" class="btn btn-outline" target="_blank">
+                <i class="fas fa-book"></i> 查看使用指南
+            </a>
+        </div>
+        
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #dee2e6; text-align: center; color: #666;">
+            <p><strong>下一步：</strong> 添加实际Logo和背景图片后，网站即可正式上线。</p>
+            <p>如需帮助部署到GitHub Pages或其他服务器，请告诉我。</p>
+        </div>
+    </div>
+    
+    <script>
+        // 添加Font Awesome图标
+        const faScript = document.createElement('script');
+        faScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js';
+        document.head.appendChild(faScript);
+    </script>
+</body>
+</html>

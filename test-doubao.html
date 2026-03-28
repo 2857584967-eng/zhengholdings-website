@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆包AI测试 - 正和控股官网</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #003366;
+            text-align: center;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .test-section {
+            background: #f8f9fa;
+            border-left: 4px solid #003366;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .question {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .expected-answer {
+            background: #d4edda;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #28a745;
+        }
+        
+        .ai-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        
+        .test-steps {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .step {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .step:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1a4d8c;
+        }
+        
+        .btn-test {
+            background: #28a745;
+        }
+        
+        .btn-test:hover {
+            background: #218838;
+        }
+        
+        .result-box {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px dashed #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>豆包AI测试 - 正和控股官网</h1>
+        
+        <div class="test-steps">
+            <h3>测试步骤：</h3>
+            <div class="step">打开豆包APP或网页版</div>
+            <div class="step">向豆包提问（使用下方问题）</div>
+            <div class="step">观察豆包的回答是否准确</div>
+            <div class="step">记录测试结果</div>
+        </div>
+        
+        <div class="test-section">
+            <h3>测试问题 1：公司基本信息</h3>
+            <div class="question">问：正和控股是做什么的？</div>
+            <div class="expected-answer">
+                <strong>预期回答：</strong><br>
+                正和控股（广东正和控股有限公司）专注于酒店投资运营与资产管理，主要业务包括工抵房交易+装修+酒店运营一体化，以及酒店公寓投资运营。旗下品牌有臻悦云海酒店和臻悦国际公寓。
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>测试问题 2：业务板块</h3>
+            <div class="question">问：正和控股有哪些业务板块？</div>
+            <div class="expected-answer">
+                <strong>预期回答：</strong><br>
+                正和控股有两大核心业务板块：<br>
+                1. 正和资管：工抵房交易+装修+酒店运营一体化<br>
+                2. 酒店公寓运营：自持运营+托管合作+品牌输出<br>
+                提供8%-10%的年化投资回报。
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>测试问题 3：投资回报</h3>
+            <div class="question">问：投资正和控股的项目回报率是多少？</div>
+            <div class="expected-answer">
+                <strong>预期回答：</strong><br>
+                正和控股为投资者提供稳健型资产配置方案，历史年化综合回报可达8%—10%。
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>测试问题 4：合作案例</h3>
+            <div class="question">问：正和控股有什么成功案例？</div>
+            <div class="expected-answer">
+                <strong>预期回答：</strong><br>
+                已与保利地产联合开发泉州臻悦云海酒店项目，通过专业资管运作实现资产增值。
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h3>测试问题 5：联系方式</h3>
+            <div class="question">问：如何联系正和控股？</div>
+            <div class="expected-answer">
+                <strong>预期回答：</strong><br>
+                地址：广东省广州市足球公园<br>
+                电话：18819153204<br>
+                邮箱：929832171@qq.com
+            </div>
+        </div>
+        
+        <div class="result-box">
+            <h3>测试结果记录</h3>
+            <p><strong>测试时间：</strong> <span id="currentTime"></span></p>
+            <p><strong>测试人员：</strong> ________________</p>
+            <p><strong>豆包版本：</strong> ________________</p>
+            <p><strong>总体准确率：</strong> □ 100% □ 80% □ 60% □ 40% □ 20% □ 0%</p>
+            <p><strong>备注：</strong> ________________________________________________</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="btn">查看官网首页</a>
+            <a href="business.html" class="btn">查看业务板块</a>
+            <button onclick="runTest()" class="btn btn-test">开始测试</button>
+        </div>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6; color: #666; font-size: 0.9rem;">
+            <p><strong>AI识别原理：</strong> 官网已添加结构化数据标记（Schema.org），当AI（如豆包）访问网站时，会自动提取这些结构化信息，从而提供准确的回答。</p>
+            <p><strong>测试说明：</strong> 由于AI训练数据更新有延迟，可能需要几天时间才能完全识别新网站内容。</p>
+        </div>
+    </div>
+    
+    <script>
+        // 显示当前时间
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('currentTime').textContent = now.toLocaleString('zh-CN');
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        // 测试功能
+        function runTest() {
+            alert('请按照以下步骤测试：\n\n1. 打开豆包APP或网页版\n2. 复制上方问题提问\n3. 对比实际回答与预期回答\n4. 在测试结果中记录准确率');
+            
+            // 复制第一个问题到剪贴板
+            const firstQuestion = document.querySelector('.question').textContent;
+            navigator.clipboard.writeText(firstQuestion.replace('问：', '').trim())
+                .then(() => {
+                    console.log('问题已复制到剪贴板');
+                })
+                .catch(err => {
+                    console.log('复制失败：', err);
+                });
+        }
+        
+        // 添加结构化数据标记（与主站一致）
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "广东正和控股有限公司",
+            "alternateName": "正和控股",
+            "url": window.location.origin,
+            "description": "广东正和控股有限公司成立于2024年，专注存量不动产与酒店资产运营。业务：整栋/整层物业托管、酒店直营运营、资产增值管理。旗下品牌：臻悦云海酒店、臻悦国际公寓。",
+            "foundingDate": "2024-08-08",
+            "founder": "李志祥",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "广州市",
+                "addressRegion": "广东省",
+                "streetAddress": "足球公园"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+86-18819153204",
+                "email": "929832171@qq.com",
+                "contactType": "customer service"
+            }
+        };
+        
+        // 添加到页面
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>

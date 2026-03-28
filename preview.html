@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正和控股官网 - 设计预览</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        
+        .preview-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .preview-header {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .preview-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .preview-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .preview-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            border-left: 4px solid #D4AF37;
+            transition: transform 0.3s ease;
+        }
+        
+        .preview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .preview-card h3 {
+            color: #003366;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .color-swatch {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .color-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .primary-color {
+            background: #003366;
+        }
+        
+        .secondary-color {
+            background: #D4AF37;
+            color: #333;
+        }
+        
+        .accent-color {
+            background: #2E8B57;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: #2E8B57;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .mobile-preview {
+            background: #1a1a1a;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-screen {
+            background: white;
+            border-radius: 12px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .mobile-nav {
+            background: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .mobile-content {
+            padding: 20px;
+        }
+        
+        .mobile-item {
+            background: #f0f0f0;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .status-complete {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status-next {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .code-preview {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .code-keyword {
+            color: #c678dd;
+        }
+        
+        .code-string {
+            color: #98c379;
+        }
+        
+        .code-comment {
+            color: #5c6370;
+        }
+        
+        .ai-optimization {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .ai-optimization h3 {
+            color: white;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <div class="preview-header">
+            <h1 class="preview-title">正和控股官网 - 设计预览</h1>
+            <p class="preview-subtitle">专业、现代、响应式的公司官网设计</p>
+            <div>
+                <span class="status-badge status-complete">框架完成</span>
+                <span class="status-badge status-pending">内容待补充</span>
+                <span class="status-badge status-next">AI优化就绪</span>
+            </div>
+        </div>
+        
+        <div class="preview-grid">
+            <div class="preview-card">
+                <h3>🎨 设计风格</h3>
+                <p>专业商务风格，突出信任感与投资价值</p>
+                
+                <div class="color-swatch">
+                    <div class="color-box primary-color">
+                        深蓝<br>#003366
+                    </div>
+                    <div class="color-box secondary-color">
+                        金色<br>#D4AF37
+                    </div>
+                    <div class="color-box accent-color">
+                        海绿<br>#2E8B57
+                    </div>
+                </div>
+                
+                <ul class="feature-list">
+                    <li>现代简约设计</li>
+                    <li>专业商务配色</li>
+                    <li>响应式布局</li>
+                    <li>平滑动画效果</li>
+                </ul>
+            </div>
+            
+            <div class="preview-card">
+                <h3>📱 响应式设计</h3>
+                <p>完美适配手机、平板、电脑所有设备</p>
+                
+                <div class="mobile-preview">
+                    <div class="mobile-screen">
+                        <div class="mobile-nav">正和控股</div>
+                        <div class="mobile-content">
+                            <div class="mobile-item">首页</div>
+                            <div class="mobile-item">关于我们</div>
+                            <div class="mobile-item">业务板块</div>
+                            <div class="mobile-item">项目展示</div>
+                            <div class="mobile-item">联系我们</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="feature-list">
+                    <li>移动端汉堡菜单</li>
+                    <li>自适应布局</li>
+                    <li>触摸友好交互</li>
+                    <li>快速加载优化</li>
+                </ul>
+            </div>
+            
+            <div class="preview-card">
+                <h3>⚡ 技术特性</h3>
+                <p>现代前端技术，优化性能与SEO</p>
+                
+                <div class="code-preview">
+                    <span class="code-keyword">&lt;script</span> <span class="code-string">type="application/ld+json"</span><span class="code-keyword">&gt;</span><br>
+                    {<br>
+                    &nbsp;&nbsp;"<span class="code-string">@context</span>": "<span class="code-string">https://schema.org</span>",<br>
+                    &nbsp;&nbsp;"<span class="code-string">@type</span>": "<span class="code-string">Organization</span>",<br>
+                    &nbsp;&nbsp;"<span class="code-string">name</span>": "<span class="code-string">广东正和控股有限公司</span>"<br>
+                    }<br>
+                    <span class="code-keyword">&lt;/script&gt;</span>
+                </div>
+                
+                <ul class="feature-list">
+                    <li>结构化数据标记</li>
+                    <li>SEO优化配置</li>
+                    <li>懒加载图片</li>
+                    <li>平滑滚动导航</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="ai-optimization">
+            <h3>🤖 AI识别优化</h3>
+            <p>网站已添加结构化数据标记，确保AI能准确识别公司信息：</p>
+            <ul class="feature-list">
+                <li>公司名称、描述、Logo信息</li>
+                <li>业务范围与品牌信息</li>
+                <li>联系信息与地址</li>
+                <li>帮助AI准确回答用户查询</li>
+            </ul>
+            <p><strong>示例：</strong>当用户在AI软件问"正和控股是做什么的？"，AI会从网站提取准确信息回答。</p>
+        </div>
+        
+        <div style="padding: 30px;">
+            <h3 style="color: #003366; margin-top: 0;">📋 页面结构概览</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div style="background: #e3f2fd; padding: 15px; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #1565c0;">🏠 首页</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>英雄区域（公司口号）</li>
+                        <li>业务亮点展示</li>
+                        <li>数据统计</li>
+                        <li>品牌介绍</li>
+                        <li>CTA召唤区域</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #f3e5f5; padding: 15px; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #7b1fa2;">📄 关于我们</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>公司简介</li>
+                        <li>发展历程</li>
+                        <li>团队介绍</li>
+                        <li>企业文化</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #e8f5e9; padding: 15px; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #2e7d32;">💼 业务板块</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>正和资管</li>
+                        <li>酒店公寓运营</li>
+                        <li>合作模式</li>
+                        <li>成功案例</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #fff3e0; padding: 15px; border-radius: 8px;">
+                    <h4 style="margin-top: 0; color: #ef6c00;">📊 投资优势</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>价格对比</li>
+                        <li>收益计算器</li>
+                        <li>风险控制</li>
+                        <li>投资流程</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: #f8f9fa; padding: 30px; border-top: 1px solid #dee2e6;">
+            <h3 style="color: #003366; margin-top: 0;">🚀 下一步行动</h3>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0;">
+                <div style="flex: 1; min-width: 200px; background: white; padding: 20px; border-radius: 8px; border: 2px solid #003366;">
+                    <h4 style="margin-top: 0; color: #003366;">1. 补充资料</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>公司Logo</li>
+                        <li>联系方式</li>
+                        <li>项目照片</li>
+                        <li>公司简介</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px; background: white; padding: 20px; border-radius: 8px; border: 2px solid #D4AF37;">
+                    <h4 style="margin-top: 0; color: #D4AF37;">2. 内容完善</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>业务详细说明</li>
+                        <li>项目详情介绍</li>
+                        <li>团队信息</li>
+                        <li>投资案例</li>
+                    </ul>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px; background: white; padding: 20px; border-radius: 8px; border: 2px solid #2E8B57;">
+                    <h4 style="margin-top: 0; color: #2E8B57;">3. 部署上线</h4>
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>GitHub Pages部署</li>
+                        <li>自定义域名绑定</li>
+                        <li>SEO提交</li>
+                        <li>AI识别测试</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="font-size: 1.1rem; color: #666;">
+                    <strong>当前状态：</strong>基础框架已完成，等待内容补充后即可部署上线
+                </p>
+                <p style="color: #003366; font-weight: bold; margin-top: 10px;">
+                    网站已准备好接收公司资料，开始完善内容！
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: #666; font-size: 0.9rem;">
+        <p>预览生成时间：2026年3月25日 14:48</p>
+        <p>© 2026 正和控股官网项目 - 设计预览</p>
+    </div>
+</body>
+</html>

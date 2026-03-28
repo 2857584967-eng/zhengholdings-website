@@ -1,0 +1,33 @@
+# 首页背景图片说明
+
+由于我无法直接创建JPG图片文件，这里提供几种解决方案：
+
+## 方案1：使用在线图片（推荐）
+使用以下高质量的商业图片作为背景：
+1. https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+   - 描述：现代酒店大堂
+   - 适合：专业、高端
+
+2. https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+   - 描述：城市天际线与建筑
+   - 适合：投资、商业
+
+3. https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
+   - 描述：豪华酒店房间
+   - 适合：酒店运营
+
+## 方案2：使用CSS渐变背景
+当前已使用深蓝色渐变背景，效果也不错。
+
+## 方案3：自定义图片
+你可以：
+1. 准备公司实际项目的照片
+2. 使用专业摄影图片
+3. 使用抽象的商业背景图
+
+## 使用方法：
+1. 下载选择的图片，保存为 `zhengholdings-website/images/hero-bg.jpg`
+2. 确保图片尺寸至少 1920x1080
+3. 图片会自动应用在首页背景
+
+当前CSS中已经配置了背景图片，只需要将图片文件放在正确位置即可。
